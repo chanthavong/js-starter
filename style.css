@@ -1,30 +1,47 @@
-body{
+body,
+input,
+button {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
 }
-.bg-login{
-    background-image: url('/login.jpg');
-    background-size: cover;
+
+.bg-login {
+    background-image: url('/login2.jpeg');
+    background-size: auto;
     background-repeat: no-repeat;
     backdrop-filter: blur(10px);
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255, 255, 255, 0.4);
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-.login{
+
+.login {
     max-width: 400px;
     width: 100%;
     min-height: 300px;
     margin: auto auto;
     padding: 40px 50px;
     border-radius: 36px;
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255, 255, 255, .2);
     backdrop-filter: blur(6px);
 }
-.input{
+
+.input {
     padding: 20px;
     margin: 10px 0;
     outline: none;
@@ -36,10 +53,12 @@ body{
     font-size: 24px;
     transition: all 1s;
 }
-.input:focus{
+
+.input:focus {
     border-bottom: 3px solid #26CED5;
 }
-.btn{
+
+.btn {
     background-color: #26CED5;
     padding: 20px;
     text-align: center;
@@ -50,6 +69,13 @@ body{
     color: white;
     font-size: 24px;
 }
+
 ::placeholder {
     color: white;
-  }
+}
+
+.h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
