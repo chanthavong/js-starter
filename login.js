@@ -17,7 +17,7 @@ function signIn() {
     )
     console.log(user)
     if (user.length>0) {
-        alert('success')
+        alert('hello')
     } else {
         alert('sign in fail!')
     }
